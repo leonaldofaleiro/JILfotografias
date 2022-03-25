@@ -1,0 +1,180 @@
+@font-face {
+  font-family: 'Raiderfont';
+  src: local('Raiderfont'), url('./fonts/Raiderfont.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(32, 32, 32);
+}
+
+
+.navbar{
+	top: 0;
+	padding: 40px;
+	background: rgb(32, 46, 44);
+  width: 100%;
+  height: 100px;
+  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+	margin-bottom: 0px;
+  
+  
+  }
+
+
+  .fa-home:hover {
+    color: #ff0707;
+  }
+  .fa-info-circle:hover {
+    color: #ff0707;
+  }
+  .fa-images:hover {
+    color: #ff0707;
+  }
+  .fa-cogs:hover {
+    color: #ff0707;
+  }
+  .fa-video:hover {
+    color: #ff0707;
+  }
+  .fa-id-badge:hover {
+    color: #ff0707;
+  }
+  
+  .menu-itens{
+	margin-top: 7px;
+  }
+  
+
+  .navbar img{
+    float: left;
+    width: 100px;
+    height: auto;
+    justify-content: center;
+    font-weight: 900px;
+    margin: 20px 80px;
+    align-items: center;
+    
+  }
+
+  /*}
+  .navbar .logo{
+    text-size-adjust: center;
+    font-size: 20px;
+    font-weight: 900px;
+    margin: 0 20px;
+  }*/
+  
+  .icon-bar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .icon-bar a{
+    margin-top: 7px;
+    margin-left: 70px;
+    text-align: center;
+    padding: 10px 30px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.993);
+    /*text-decoration: none;
+    color: black;
+    padding: 5px 15px ;
+    border-radius: 50px ;
+    transition: .6s ease;*/
+  }
+
+
+
+
+
+
+
+
+  .top button {
+    top: 20px;
+    left: 40%;
+    right: 60%;
+    position: absolute;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(255, 255, 255);
+    margin: 50px 14px;
+    background: rgb(32, 46, 44);
+    border: 5px solid #444;
+    font-size: 50px;
+    border-radius: 8px;
+    transition: all 0.6s ease;
+    position: relative;
+    
+  }
+  
+  button:hover{
+    box-shadow: none;
+  }
+  
+
+
+  .container {
+    max-width: 1280px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 33.3%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    filter: grayscale(1) brightness(0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s linear;
+  }
+  .column img:hover {
+    filter: grayscale(0);
+  }
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+    .column img {
+      filter: grayscale(0) brightness(1);
+    }
+  }
+
